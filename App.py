@@ -67,6 +67,31 @@ a {
 </style>
 """)
 
+# ---------------- BACKGROUND IMAGE ---------------- #
+page_bg_img = f"""
+<style>
+
+[data-testid="stAppViewContainer"] {{
+background-image: url("https://wallpaperbat.com/img/1287604-movie-theater-wallpaper.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stSidebar"] {{
+background: rgba(0,0,0,0.7);
+}}
+
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # ---------------- LOAD FILES ---------------- #
 
 movies = pickle.load(open('movie_dict.pkl', 'rb'))
