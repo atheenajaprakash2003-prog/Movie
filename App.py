@@ -270,7 +270,8 @@ if not st.session_state.started:
           </div>
         </div>
         <div class="screen-footer">
-          <span class="sf-left">Hollywood Archive © 2026</span>
+          <span class="sf-left">Hollywood Archive © 2025</span>
+          <span class="sf-right">⚡ Powered by TMDB API</span>
         </div>
       </div>
     </div>
